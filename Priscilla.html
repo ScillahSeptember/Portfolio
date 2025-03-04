@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Priscilla Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Priscilla</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="#home">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#about">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#skills">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#developments">Developments</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="#contact">Contact Me</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#developments">Developments</a>
+            <a href="#contact">Contact</a>
+            <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+     <!-- Home -->
+        <section id="home">
+            <div class="main-container">
+                <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+                    <img src="images/me.JPG" alt="">
+                </div>
+                <div class="content">
+                    <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Hey I'm Priscilla, A Data Analyst</h1>
+                    
+                    <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000"></p>
+                    <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+                        <a href="https://github.com/ScillahSeptember" ><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/priscilla-nkuna-a42266211/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="CV_PN.pdf" download class="download-btn">Download CV</a>
+                    </div>
+                    <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+                      
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2 style="text-align: center;">About Priscilla</h2>
+        </br>
+        <div class="about-me">
+            <p style="text-align: center;">I am a data-driven problem solver with a strong foundation in Informatics and a passion for uncovering insights that drive business growth. From cleaning raw data to crafting compelling visualizations, I transform complex datasets into actionable strategies that fuel informed decision-making. My expertise spans user acceptance testing (UAT), programming in Java and SQL, and leveraging tools like Jira for task management.
+
+              With hands-on experience in systems testing—creating test cases and conducting core journey testing—I ensure that data-driven solutions are both accurate and reliable. As a former mentor at Tshwane University of Technology, I have honed my ability to guide and support others in the field of ICT.
+              
+              Always exploring the latest analytics tools and techniques, I stay ahead of industry trends to deliver cutting-edge solutions. My skill set includes project management, time management, and the ability to work under pressure while maintaining efficiency.</p>
+          </div>
+
+        </section>
+
+         <!-- Skills -->
+        <section id="skills">
+            <h2 style="text-align: center;">Skills</h2>
+        </br>
+            <div class="skills-cards">
+              <div class="skill-card">
+                <img src="images/java.png" alt="Java Logo">
+                <h3>Java</h3>
+                <div class="progress-bar"><div style="width: 40%;"></div></div>
+              </div>
+              <div class="skill-card">
+                <img src="images/html.png" alt="HTML Logo">
+                <h3>HTML & CSS</h3>
+                <div class="progress-bar"><div style="width: 70%;"></div></div>
+              </div>
+              <div class="skill-card">
+                <img src="images/sql.png" alt="SQL Logo">
+                <h3>SQL</h3>
+                <div class="progress-bar"><div style="width: 90%;"></div></div>
+              </div>
+              <div class="skill-card">
+                <img src="images/python.png" alt="Python Logo">
+                <h3>Python</h3>
+                <div class="progress-bar"><div style="width: 50%;"></div></div>
+              </div>
+              <div class="skill-card">
+                <img src="images/testing.png" alt="Python Logo">
+                <h3>User Acceptance Testing</h3>
+                <div class="progress-bar"><div style="width: 85%;"></div></div>
+              </div>
+              <div class="skill-card">
+                <img src="images/business-analysis.png" alt="Python Logo">
+                <h3>Business Analysis</h3>
+                <div class="progress-bar"><div style="width: 60%;"></div></div>
+              </div>
+            </div>
+          </section>
+
+           <!-- Developments -->
+           <section id="developments">
+            <h2>Developments</h2>
+           </br>  
+            <div class="projects">
+              <div class="project">
+                <img src="images/airline.jpg" alt="Project 1">
+                <h3>Airline Customer Satisfaction</h3>
+                <p>This project analyzes customer satisfaction data for an airline.</p>
+                <a style="color: rgb(172, 2, 129);"  href="https://github.com/ScillahSeptember/Airline-customer-satisfaction" target="_blank">View Project</a>
+              </div>
+              <div class="project">
+                <img src="images/cleaning.jpg" alt="Project 2">
+                <h3>Data Cleaning Using Pandas</h3>
+                <p>Basic data cleaning.</p>
+                <a style="color: rgb(172, 2, 129);"   href="https://github.com/ScillahSeptember/Jupyter-Notebook-projects" target="_blank">View Project</a>
+              </div>
+              <div class="project">
+                <img src="images/employee.jpg" alt="Project 3">
+                <h3>Employee Performance</h3>
+                <p>Analysing Employee Performance</p>
+                <a style="color: rgb(172, 2, 129);"   href="https://github.com/ScillahSeptember/Employee-Performance" target="_blank">View Project</a>
+              </div>
+              <div class="project">
+                <img src="images/dashboard.jpg" alt="Project 4">
+                <h3>Dashboard</h3>
+                <p>Dashboard design.</p>
+                <a style="color: rgb(172, 2, 129);"   href="https://github.com/ScillahSeptember/Dashboard-Design" target="_blank">View Project</a>
+              </div>
+              <div class="project">
+                <img src="images/quality.jpg" alt="Project 5">
+                <h3>Data Quality Analysis</h3>
+                <p>Analysing data quality.</p>
+                <a style="color: rgb(172, 2, 129);"  href="https://github.com/ScillahSeptember/Data-Quality-Analysis" target="_blank">View Project</a>
+              </div>
+            </div>
+          </section>
+          
+           <!-- Contact -->
+        </br>
+      </br>
+    </br>
+  </br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+          <section id="contact">
+            <h2>Contact Me</h2>
+          </br>
+            <div class="social-links">
+                <a href="https://github.com/ScillahSeptember" ><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/priscilla-nkuna-a42266211/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:priscillankuna01@gmail.com"><i class="fa-brands fa-xmark"></i></a>
+            </div>
+          </section>
+
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({offset:0});
+        </script>
+        <script>
+            function hamburg(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(0px)"
+            }
+            function cancel(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(-500px)"
+            }
+        </script>
+        <script>
+    let lastScrollTop = 0;
+    const header = document.getElementById('header');
+    const headerHeight = header.offsetHeight;
+
+    window.addEventListener('scroll', function() {
+      let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+      
+      if (currentScroll > lastScrollTop && currentScroll > headerHeight) {
+        header.style.top = `-${headerHeight}px`;
+      } else if (currentScroll < lastScrollTop) {
+        header.style.top = "0";
+      }
+
+      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+    });
+  </script>
+</body>
+</html>
